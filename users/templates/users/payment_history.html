@@ -1,0 +1,28 @@
+{% extends "website/base.html" %}
+{% block content %}
+<div>
+    <table class="table table-responsive table-hover text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th>ORDER ID</th>
+                <th>BANK TXN ID</th>
+                <th>TXN AMOUNT</th>
+                <th>TXN DATE</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for payment in page_obj %}
+                <tr>
+                    <td>{{ payment.ORDERID }}</td>
+                    <td>{{ payment.BANKTXNID }}</td>
+                    <td>{{ payment.TXNAMOUNT }}</td>
+                    <td>{{ payment.TXNDATE }}</td>
+                    <td>{{ payment.STATUS }}</td>
+                </tr>
+            {%  endfor %}
+        </tbody>
+    </table>
+    {% include 'website/pagination.html' %}
+</div>
+{% endblock %}

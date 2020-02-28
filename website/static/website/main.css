@@ -1,0 +1,258 @@
+body {
+    background: #fafafa;
+    margin-top: 5rem;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  .bg-steel {
+    background-color: #5f788a;
+  }
+
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+/* =================================== */
+/*  Custom Styles
+/* =================================== */
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-white a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.text-grey {
+  color: #444444;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: #6bb0ff;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #d4e4f7;
+}
+
+.width-90 {
+  width: 90%;
+}
+  
+
+
+/*-------- Start Banner Area ------------*/
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.relative {
+  position: relative; }
+
+.banner-area {
+  background: url(../website/images/banner-bg.jpg) center;
+  background-size: cover; }
+  .banner-area .container-fluid {
+    padding-left: 15%;
+    padding-right: 20%; }
+    @media (max-width: 992px) {
+      .banner-area .container-fluid {
+        padding-left: 10%;
+        padding-right: 13%; } }
+  @media (max-width: 767px) {
+    .banner-area .banner-img {
+      display: none; } }
+
+@media (max-width: 767px) {
+  .fullscreen {
+    height: 700px !important; } }
+.banner-content {
+  text-align: left; }
+  @media (max-width: 767px) {
+    .banner-content {
+      padding: 0 10%; } }
+  .banner-content h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 10px; }
+    @media (max-width: 991.98px) {
+      .banner-content h1 {
+        font-size: 36px; } }
+    @media (max-width: 991.98px) {
+      .banner-content h1 br {
+        display: none; } }
+    @media (max-width: 1199.98px) {
+      .banner-content h1 {
+        font-size: 45px; } }
+    @media (max-width: 480px) {
+      .banner-content h1 {
+        font-size: 32px; } }
+    .banner-content h1 span {
+      color: #0093df; }
+  .banner-content .primary-btn {
+    font-size: 13px; }
+    .banner-content .primary-btn:hover {
+      background-color: #fff;
+      color: #0093df; }
+
+/*-------- End Banner Area ------------*/
+
+
+/*-------- Start About Us Area ------------*/
+@media (max-width: 991px) {
+  .about-area .about-left {
+    text-align: center;
+    margin-bottom: 50px; } }
+.about-area .about-right {
+  padding-left: 90px; }
+  @media (max-width: 992px) {
+    .about-area .about-right {
+      padding-left: 15px; } }
+  .about-area .about-right .single-about {
+    margin-bottom: 50px; }
+    @media (max-width: 768px) {
+      .about-area .about-right .single-about {
+        margin-bottom: 30px; } }
+    .about-area .about-right .single-about h4 {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 16px; }
+    .about-area .about-right .single-about p {
+      margin: 0px; }
+
+/*-------- End About Us Area ------------*/
+
+
+/* =================================== */
+/*  Footer Styles
+/* =================================== */
+.section-gap {
+  padding: 120px 0;
+}
+
+.footer-area {
+  background: #000000; }
+  .footer-area h4 {
+    padding-bottom: 30px;
+    color: #fff; }
+  .footer-area .number {
+    color: #0093df;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px; }
+  .footer-area .genric-btn {
+    background: #0093df;
+    border: none;
+    border-radius: 57px;
+    height: 36px;
+    line-height: 41px; }
+  .footer-area .primary-btn {
+    background-color: #0093df; }
+  .footer-area .primary-btn:hover .lnr {
+    color: #0093df; }
+  .footer-area .footer-bottom {
+    padding-top: 80px; }
+    .footer-area .footer-bottom a {
+      color: #0093df; }
+    .footer-area .footer-bottom .footer-text {
+      margin-bottom: 0px !important; }
+    .footer-area .footer-bottom .footer-social {
+      text-align: right; }
+      .footer-area .footer-bottom .footer-social a {
+        background: #252526;
+        width: 20px;
+        width: 40px;
+        display: inline-table;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+        .footer-area .footer-bottom .footer-social a:hover {
+          background-color: #0093df; }
+      .footer-area .footer-bottom .footer-social i {
+        color: #fff;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+      @media (max-width: 991.98px) {
+        .footer-area .footer-bottom .footer-social {
+          text-align: left;
+          margin-top: 20px; } }
+  @media (max-width: 768px) {
+    .footer-area .single-footer-widget .newsletter .primary-btn {
+      right: 2% !important;
+      width: auto;
+      right: 0;
+      top: 5px;
+      transform: translate(0%, 0); } }
+
+.single-footer-widget .navbar-form {
+  width: 100%; }
+  .single-footer-widget .navbar-form .form-control {
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 9px 9px 9px 20px; }
+    .single-footer-widget .navbar-form .form-control:focus {
+      box-shadow: none !important; }
+  .single-footer-widget .navbar-form .add-on {
+    background: #1a1a1a;
+    border-radius: 20px;
+    border: 1px solid #1a1a1a; }
+  .single-footer-widget .navbar-form .genric-btn {
+    padding: 0px; }
+    .single-footer-widget .navbar-form .genric-btn:hover {
+      background-color: #0093df; }
+      .single-footer-widget .navbar-form .genric-btn:hover .lnr {
+        color: #fff; }
+  .single-footer-widget .navbar-form .error {
+    color: #FF0000; }
+  .single-footer-widget .navbar-form .lnr {
+    padding: 11px;
+    font-weight: 900;
+    font-size: 13px !important;
+    color: #fff; }

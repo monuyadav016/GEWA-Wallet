@@ -1,0 +1,25 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block content %}
+<div>
+    <table class="table table-responsive table-hover text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th>TO USER</th>
+                <th>TXNAMOUNT</th>
+                <th>ORDERDATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in page_obj %}
+                <tr>
+                    <td>{{ order.to_user }}</td>
+                    <td>{{ order.amount }}</td>
+                    <td>{{ order.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% include 'website/pagination.html' %}
+</div>
+{% endblock %}

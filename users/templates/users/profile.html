@@ -1,0 +1,88 @@
+{% extends "website/base.html" %}
+{% block content %}
+<div class="content-section">
+  <div class="media">
+    <div class="media-body">
+      <p class="text-secondary text-center"><i class="fas fa-wallet mr-3"></i> Balance : ₹{{ user.wallet.balance }}</p>
+      <div class="row">
+        <div class="col mt-3">
+          NAME
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ user.get_full_name }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+          USERNAME
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ user.username }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+          DATE OF BIRTH
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ profile.dob }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+          RESIDENTIAL ADDRESS
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ profile.res_add }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+          CITY
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ profile.res_city }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+          STATE
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ profile.res_state }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+          PHONE NUMBER
+        </div>
+        <div class="col mt-3">
+          :
+        </div>
+        <div class="col mt-3">
+          {{ profile.phone_no }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FORM HERE -->
+</div>
+{% endblock content %}

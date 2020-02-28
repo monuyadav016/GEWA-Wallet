@@ -1,0 +1,22 @@
+{% extends "website/base.html" %}
+{% block content %}
+
+    {% if status == 'TXN_SUCCESS' %}
+        <p class="text-primary">Congratulation your payment is successful.<span class="fas fa-check-circle"></span></p>
+    {% elif status == 'TXN_FAILURE' %}
+        <p class="text-primary">Transaction Failed, Please try again.<span class="fas fa-times-circle"></span></p>
+    {% elif status == 'PENDING' %}
+        <p class="text-primary">Transaction Pending, We will contact u soon or contact us on "CONTACT US" tab in website.<span class="fas fa-times-circle"></span></p>
+    {% endif %}
+
+    <table border="1">
+        <tbody>
+          {% for key,value in paytm.items %}
+            {% if key == 'id' or key == 'user' or key == 'MID' or key == 'PAYMENTMODE' or key == 'CURRENCY' or key == 'RESPCODE' or key == 'GATEWAYNAME' or key == 'BANKNAME' %}
+            {% else %}
+              {{key}} - {{ value }}<br>
+              {% endif %}
+          {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

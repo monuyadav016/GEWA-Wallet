@@ -1,0 +1,22 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block fullcontent %}
+    <!-- start banner Area -->
+	<section class="banner-area relative pb-5" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container-fluid">
+			<div class="row fullscreen d-flex align-items-center justify-content-between">
+				<div class="col-lg-6 col-md-6 banner-img">
+					<img class="img-fluid" src="{% static 'website/images/banner-img.png' %}" alt="">
+				</div>
+				<div class="banner-content col-lg-6 col-md-6">
+					<h1 class="text-uppercase">
+						<span>Elite Sports</span> to <br> Shape your body
+                    </h1>
+                    <a class="btn btn-primary" href="{% url 'signup' %}" role="button">Become a Member</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+{% endblock fullcontent %}
