@@ -4,7 +4,7 @@ chardet==3.0.4
 Django==3.0.3
 django-crispy-forms==1.8.1
 idna==2.9
-pycrypto==2.6.1
+pycryptodome==3.9.7
 PyMySQL==0.9.3
 pytz==2019.3
 requests==2.23.0
